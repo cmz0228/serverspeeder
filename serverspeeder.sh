@@ -5,7 +5,7 @@ export PATH
 
 #定义变量
 #授权文件自动生成url
-APX=http://rs.91yun.pw/apx1.php
+APX=https://api.lotsever.tk/apx1.php
 #安装包下载地址
 INSTALLPACK=https://github.com/91yun/serverspeeder/blob/test/91yunserverspeeder.tar.gz?raw=true
 #判断版本支持情况的地址
@@ -173,7 +173,7 @@ wget -N --no-check-certificate -O serverspeedersn.txt "$APX?mac=$MAC&sno"
 SNO=$(cat serverspeedersn.txt)
 rm -rf serverspeedersn.txt
 sed -i "s/serial=\"sno\"/serial=\"$SNO\"/g" 91yunserverspeeder/apxfiles/etc/config
-sed -i "s/apx-20341231/apx/g" 91yunserverspeeder/apxfiles/etc/config
+sed -i "s/apx-29991231/apx/g" 91yunserverspeeder/apxfiles/etc/config
 rv=$release"_"$kernel_result
 sed -i "s/acce-3.10.61.0-\[Debian_7_3.2.0-4-amd64\]/acce-$serverspeederver-[$rv]/g" 91yunserverspeeder/apxfiles/etc/config
 
