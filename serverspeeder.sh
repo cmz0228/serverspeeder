@@ -173,7 +173,7 @@ wget -N --no-check-certificate -O serverspeedersn.txt "$APX?mac=$MAC&sno"
 SNO=$(cat serverspeedersn.txt)
 rm -rf serverspeedersn.txt
 sed -i "s/serial=\"sno\"/serial=\"$SNO\"/g" 91yunserverspeeder/apxfiles/etc/config
-sed -i "s/apx-29991231/apx/g" 91yunserverspeeder/apxfiles/etc/config
+sed -i "s/apx-20341231/apx/g" 91yunserverspeeder/apxfiles/etc/config
 rv=$release"_"$kernel_result
 sed -i "s/acce-3.10.61.0-\[Debian_7_3.2.0-4-amd64\]/acce-$serverspeederver-[$rv]/g" 91yunserverspeeder/apxfiles/etc/config
 
